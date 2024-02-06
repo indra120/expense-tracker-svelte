@@ -1,6 +1,6 @@
 <script lang="ts">
   import { toast } from "svoast"
-  import { transactions, type Transaction } from "../store"
+  import { transactions } from "../store"
 
   let newTransaction = { id: 0, text: "", amount: "" || 0 }
 
