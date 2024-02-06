@@ -55,3 +55,13 @@ h3 {
 .list li.minus {
   border-right: 5px solid #c0392b;
 }
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
