@@ -1,6 +1,6 @@
 <script lang="ts">
   import { toast } from "svoast"
-  import { transactions } from "../store"
+  import { transactions } from "@/store"
 
   const deleteTransactionById = (id: number) => () => {
     transactions.update((lists) => lists.filter((item) => item.id !== id))

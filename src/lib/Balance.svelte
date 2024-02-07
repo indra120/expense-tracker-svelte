@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { transactions } from "../store"
+  import { transactions } from "@/store"
   $: total = $transactions.reduce((acc, data) => acc + data.amount, 0)
 </script>
 

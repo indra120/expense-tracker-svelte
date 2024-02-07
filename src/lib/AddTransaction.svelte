@@ -1,6 +1,6 @@
 <script lang="ts">
   import { toast } from "svoast"
-  import { transactions } from "../store"
+  import { transactions } from "@/store"
 
   let newTransaction = { id: 0, text: "", amount: "" || 0 }
 
@@ -26,27 +26,12 @@
 <form on:submit|preventDefault={handleSubmit}>
   <div class="form-control">
     <label for="text">Text</label>
-
-    <input
-      type="text"
-      id="text"
-      bind:value={newTransaction.text}
-      placeholder="Enter text..."
-    />
+    <input bind:value={newTransaction.text} type="text" id="text" placeholder="Enter text..."/>
   </div>
 
   <div class="form-control">
-    <label for="amount">
-      Amount <br />
-      (negative - expense, positive - income)
-    </label>
-
-    <input
-      type="text"
-      id="amount"
-      bind:value={newTransaction.amount}
-      placeholder="Enter amount..."
-    />
+    <label for="amount">Amount <br />(negative - expense, positive - income)</label>
+    <input bind:value={newTransaction.amount} type="text" id="amount" placeholder="Enter amount..."/>
   </div>
 
   <button class="btn">Add transaction</button>
